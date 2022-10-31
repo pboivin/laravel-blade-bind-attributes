@@ -23,7 +23,7 @@ This package adds support for a `@bind` attribute in Blade component tags. This 
 
 This is equivalent to:
 
-```
+```blade
 <x-header
     :title="$header['title']"
     :secondary-title="$header['secondaryTitle']"
