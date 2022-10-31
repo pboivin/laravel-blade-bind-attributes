@@ -14,12 +14,14 @@ class BladeCompiler extends BaseBladeCompiler
      */
     protected function compileComponentTags($value)
     {
-        if (! $this->compilesComponentTags) {
+        if (!$this->compilesComponentTags) {
             return $value;
         }
 
         return (new ComponentTagCompiler(
-            $this->classComponentAliases, $this->classComponentNamespaces, $this
+            $this->classComponentAliases,
+            $this->classComponentNamespaces,
+            $this
         ))->compile($value);
     }
 }
