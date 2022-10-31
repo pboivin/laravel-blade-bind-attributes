@@ -1,6 +1,19 @@
 {
     "name": "pboivin/laravel-blade-bind-attributes",
-    "description": "Experimental",
+    "description": "Attribute unpacking for Laravel Blade component tags",
+    "keywords": ["php", "laravel", "blade", "package"],
+    "homepage": "https://github.com/pboivin/laravel-blade-bind-attributes",
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/pboivin/laravel-blade-bind-attributes/issues",
+        "source": "https://github.com/pboivin/laravel-blade-bind-attributes"
+    },
+    "authors": [
+        {
+            "name": "Patrick Boivin",
+            "email": "pboivin@gmail.com"
+        }
+    ],
     "require": {
         "php": ">=8.1",
         "laravel/framework": "^9.0"
