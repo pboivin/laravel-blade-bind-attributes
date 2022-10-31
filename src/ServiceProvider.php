@@ -12,7 +12,7 @@ class ServiceProvider extends BaseServiceProvider
         $this->extendBladeCompiler();
     }
 
-    public function extendBladeCompiler()
+    protected function extendBladeCompiler()
     {
         $this->app->singleton('blade.compiler', function ($app) {
             return tap(new BladeCompiler(

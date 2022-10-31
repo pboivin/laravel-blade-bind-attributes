@@ -36,10 +36,16 @@ class TestCase extends BaseTestCase
     {
         parent::setUp();
 
-        File::deleteDirectory(resource_path('views/components'));
-        File::deleteDirectory(resource_path('views'));
+        $this->cleanup();
 
         $this->afterSetup();
+    }
+
+    protected function cleanup()
+    {
+        File::deleteDirectory(app_path('View'));
+
+        File::deleteDirectory(resource_path('views'));
     }
 
     protected function afterSetup()

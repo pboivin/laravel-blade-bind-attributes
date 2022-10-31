@@ -28,4 +28,21 @@ class ComponentTagCompiler extends BaseComponentTagCompiler
 
         return collect([$bound, $other])->filter()->join(',');
     }
+
+    /**
+     * Partition the data and extra attributes from the given array of attributes.
+     *
+     * @param  string  $class
+     * @param  array  $attributes
+     * @return array
+     */
+    public function partitionDataAndAttributes($class, array $attributes)
+    {
+        // Behave like a class-less component if a `@bind` attribute is present
+        if (array_key_exists('@bind', $attributes)) {
+            return [collect($attributes), collect($attributes)];
+        }
+
+        return parent::partitionDataAndAttributes($class, $attributes);
+    }
 }
