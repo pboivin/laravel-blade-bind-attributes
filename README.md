@@ -40,6 +40,8 @@ This is equivalent to:
 
 ```
 composer require pboivin/laravel-blade-bind-attributes
+
+php artisan view:clear
 ```
 
 ## Caveats
