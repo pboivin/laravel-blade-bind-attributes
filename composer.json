@@ -1,0 +1,20 @@
+{
+    "name": "pboivin/laravel-blade-bind-attributes",
+    "description": "Experimental",
+    "require": {
+        "php": ">=8.1",
+        "laravel/framework": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Pboivin\\LaravelBladeBindAttributes\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Pboivin\\LaravelBladeBindAttributes\\ServiceProvider"
+            ]
+        }
+    }
+}
