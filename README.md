@@ -1,4 +1,4 @@
-# `@bind` Attribute for Laravel Blade
+# Attribute array unpacking for Laravel Blade component tags
 
 <p>
 <a href="https://github.com/pboivin/laravel-blade-bind-attributes/actions"><img src="https://github.com/pboivin/laravel-blade-bind-attributes/workflows/tests/badge.svg" alt="Build Status"></a>
@@ -8,7 +8,7 @@
 
 ⚠ EXPERIMENTAL ⚠
 
-This package adds support for a `@bind` attribute in Blade component tags. This new attribute allows you to extract all keys from a given array as component props:
+This package adds support for `@bind` attributes in Blade component tags. The new attribute allows you to extract all keys from a given array as component props:
 
 ```blade
 @php
