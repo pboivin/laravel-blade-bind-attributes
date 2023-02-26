@@ -34,7 +34,7 @@ This is equivalent to:
 ## Requirements
 
 - PHP >= 8.1
-- Laravel 9.x
+- Laravel >= 9.x
 
 ## Installation
 
